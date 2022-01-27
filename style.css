@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181818;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 600px;
+    margin-bottom: 24px;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+.container-input span{
+    color: #fff;
+    font-size: 22px;
+}
+.slider{
+   -webkit-appearance: none; 
+   width: 100%;
+   height: 18px;
+   outline: none;
+   border-radius: 5px;
+   background-color: #DFDFDF;
+   margin-top: 8px;
+}
+.button-cta{
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.title{
+    text-align: center;
+    color: #FFF ;
+    font-size: 28px; 
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.password{
+    height: 60px;
+    background-color: rgba(0,0,0, 0.40);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+.password:hover{
+    transform: scale(1.05);  
+}
+.tooltip{
+    color: #fff;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background-color: rgb(15,15,15) ;  
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.esconde{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
